@@ -6,6 +6,10 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
+h1 {
+    color: rgb(8, 188, 8)
+}
+
 .contenedor {
     width: 90%;
     max-width: 1500px;
@@ -17,7 +21,7 @@ nav {
     height: 80px;
     background: #fff;
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 blueviolet;
+    box-shadow: 1px 1px 12px 0 rgb(8, 188, 8);
     position: fixed;
     top: 0;
     z-index: 100;
@@ -44,13 +48,12 @@ nav {
 .nav .enlaces_header a {
     color: black;
     text-decoration: none;
-    margin-left: 20px;
-    
+    margin-left: 40px;
 }
 
 #foto_perfil {
     margin-top: 70px;
-    height: 650px;
+    height: 600px;
     width: 1500px;
 
 }
@@ -75,7 +78,6 @@ nav {
 .table_productos{
     margin: 50px auto;
     text-align:justify;
-
 }
 
 .table_productos img{
@@ -85,4 +87,7 @@ nav {
 
 .table_productos td{
     width: 1em;
+    
+    
 }
+
