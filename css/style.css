@@ -46,6 +46,9 @@ nav {
     text-decoration: none;
     margin-left: 40px;
 }
+.enlaces_header a:hover {
+    color: #017d75;
+}
 
 #foto_perfil {
     margin-top: 100px;
