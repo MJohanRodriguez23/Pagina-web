@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contenedor {
@@ -194,7 +195,7 @@ footer {
 }
 
 .partFooter > a:hover {
-    background-color: #017d75;
+    background-color: #00a79c;
     transition: all ease-in-out .4s;
 
 }
@@ -215,7 +216,7 @@ footer {
 }
 
 .social-media > a > i:hover {
-    background-color: #017d75;
+    background-color: #00a79c;
 }
 
 .partFooter img {
