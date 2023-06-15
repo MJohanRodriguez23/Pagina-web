@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <div class="img-bx">
+            <img src="img/form.avif" alt="">
+        </div>
+        <div class="content-bx">
+            <div class="form-bx">
+                <div class="form">
+                <h2>Inicia Sesión</h2>
+                <form action="" method="post" id="form" autocomplete="off" >
+                    <div class="input-bx">
+                        <span>Usuario</span>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-bx">
+                        <span>Email</span>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input-bx">
+                        <span>Contraseña</span>
+                        <input type="password" id="password">
+                    </div>
+                    <br>
+                    <div class="input-bx">
+                        <input type="submit" value="Iniciar">
+                    </div>
+                    <p class="info" id="info"></p>
+                    <div class="input-bx">
+                        <br>
+                        <p>¿No tienes Cuenta? <a href="#">Regístrate</a></p>
+                    </div>
+                </form>
+                <h3>Iniciar Sesión con</h3>
+                <ul class="sci">
+                    <li><img src="img/facebook.png" alt=""></li>
+                    <li><img src="img/instagram.png" alt=""></li>
+                    <li><img src="img/twitter.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById("form");
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const espacioinfo = document.getElementById("info");
+
+        form.addEventListener("submit", evento=> {
+            evento.preventDefault();
+
+            let val_email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let verificar = false;
+            let info = "";
+
+            if(name.value.length < 3){
+                info += "El nombre debe tener almenos 3 caracteres <br>";
+                verificar = true;
+            }
+            
+            if(!val_email.test(email.value)){
+                info += "Email invalido, porfavor ingrese nuevamente <br>"
+                verificar = true;
+            }
+            if (password.value.length < 8){
+                info += "Contraseña muy corta y debil <br>"
+                verificar = true;
+            }
+
+            if(verificar){
+                espacioinfo.innerHTML = info;
+                espacioinfo.style.color = "red";
+            }else{
+                
+                window.location.href = 'index.html';
+            }
+
+
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>
