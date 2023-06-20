@@ -16,6 +16,11 @@ li {
     list-style: none;
 }
 
+i {
+    color: #4D5D5B;
+    padding-right: 8px;
+}
+
 section {
     position: relative;
     width: 100%;
@@ -52,13 +57,13 @@ section .content-bx .form-bx {
 }
 
 section .content-bx .form-bx h2 {
-    color:black;
+    color:#363d3c;
     font-weight: 600;
     font-size: 1.5em;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 section .content-bx .form-bx .input-bx {

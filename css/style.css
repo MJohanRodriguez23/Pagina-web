@@ -19,7 +19,7 @@ nav {
     height: 80px;
     background: #fff;
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 13px 0 #017d75;
+    box-shadow: 1px 1px 13px 0 #4D5D5B;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -48,13 +48,7 @@ nav {
     margin-left: 40px;
 }
 .enlaces_header a:hover {
-    color: #017d75;
-}
-
-#foto_perfil {
-    margin-top: 100px;
-    height: 630px;
-    width: 1500px;
+    color: #4D5D5B;
 }
 
 h2 {
@@ -72,6 +66,34 @@ h2 {
     width: 60px;
 }
 
+.slider-section img {
+    height: 650px;
+    width: 1550px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+
+  .container-carousel{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    margin-top: 60px;
+    width: 1500px;
+    height: 650px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+  }
+  .carruseles{
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slider-section{
+    width: calc(100% / 4);
+    height: 100%;
+  }
+  
 header {
     display: flex;
     align-items: center;
@@ -196,7 +218,7 @@ p {
 }
 
 .fa-chevron-up:hover {
-    color: #00a79c;
+    color: #4D5D5B;
 }
 
 .carrito {
@@ -213,7 +235,7 @@ p {
 }
 
 .btn-add-to-cart:hover{
-    color: #00a79c;
+    color: #4D5D5B;
 }
 
 .hidden{
@@ -287,7 +309,7 @@ p {
     text-align: center;
     margin-bottom: 60px;
     margin-top: 30px;
-    color: #017d75;
+    color: #4D5D5B;
 }
 
 .card-list-products{
@@ -298,7 +320,7 @@ p {
 }
 
 .price {
-    color: #017d75;
+    color: #4D5D5B;
 }
 
 .card {
@@ -334,7 +356,7 @@ p {
 }
 
 .text-product h3:hover{
-    color: #017d75;
+    color: #4D5D5B;
 }
 
 .text-product p{
@@ -343,7 +365,7 @@ p {
 }
 
 .text-product p:hover{
-    color: #017d75;
+    color: #4D5D5B;
 }
 
 footer {
@@ -372,10 +394,10 @@ footer {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
-    background-color: #017d75;
+    background-color: #4D5D5B;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid double #017d75;
+    border: 1px solid double #4D5D5B;
 }
 
 .contact {
@@ -406,7 +428,7 @@ footer {
 }
 
 .partFooter > a:hover {
-    background-color: #00a79c;
+    background-color: #4D5D5B;
     transition: all ease-in-out .4s;
 
 }
@@ -427,7 +449,7 @@ footer {
 }
 
 .social-media > a > i:hover {
-    background-color: #00a79c;
+    background-color: #4D5D5B;
 }
 
 .partFooter img {
