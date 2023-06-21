@@ -53,11 +53,11 @@
     </section>
 
     <script>
-        const form = document.getElementById("form");
-        const name = document.getElementById("name");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-        const espacioinfo = document.getElementById("info");
+        const form          = document.getElementById("form");
+        const name          = document.getElementById("name");
+        const email         = document.getElementById("email");
+        const password      = document.getElementById("password");
+        const espacioinfo   = document.getElementById("info");
 
         form.addEventListener("submit", evento=> {
             evento.preventDefault();
@@ -67,16 +67,16 @@
             let info = "";
 
             if(name.value.length < 3){
-                info += "El nombre debe tener almenos 3 caracteres <br><br>";
+                info += " - El nombre debe tener almenos 3 caracteres <br><br>";
                 verificar = true;
             }
             
             if(!val_email.test(email.value)){
-                info += "Email invalido, porfavor ingrese nuevamente <br><br>"
+                info += " - Email invalido, porfavor ingrese nuevamente <br><br>"
                 verificar = true;
             }
             if (password.value.length < 8){
-                info += "Contraseña muy corta y debil <br><br>"
+                info += " - Contraseña muy corta y debil <br><br>"
                 verificar = true;
             }
 
